@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    input, button {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+    }
+
+    #weather {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #ffffffcc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌤️ Weather App</h1>
+
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button onclick="getWeatherByCity()">Search</button>
+  <button onclick="getWeatherByLocation()">Use My Location</button>
+
+  <div id="weather"></div>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
